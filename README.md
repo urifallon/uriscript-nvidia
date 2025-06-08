@@ -34,24 +34,23 @@ The script performs the following tasks:
 
 1. Download the script:
    ```bash
-   mkdir -p nvidia-installer && cd nvidia-installer
-   curl -O https://yourdomain.com/nvidia_cuda_installer.sh
+   mkdir -p uriscript && cd uriscript && curl -O https://raw.githubusercontent.com/urifallon/uriscript-nvidia-cuda/refs/heads/main/uriscript-nvidia-cuda.sh
    ```
 
 2. Make it executable and run:
    ```bash
-   chmod +x nvidia_cuda_installer.sh
-   sudo ./nvidia_cuda_installer.sh
+   chmod +x uriscript-nvidia-cuda.sh
+   sudo ./uriscript-nvidia-cuda.sh
    ```
 
 ## 🇻🇳 Vietnamese Version
 
-A Vietnamese version of this script is available [here](https://yourdomain.com/nvidia_cuda_installer_vn.sh), or you can run:
+A Vietnamese version of this script is available [here](https://github.com/urifallon/uriscript-nvidia-cuda/blob/main/uriscript-nvidia-cuda-vn.sh), or you can run:
 
 ```bash
-curl -O https://yourdomain.com/nvidia_cuda_installer_vn.sh
-chmod +x nvidia_cuda_installer_vn.sh
-sudo ./nvidia_cuda_installer_vn.sh
+curl -O https://raw.githubusercontent.com/urifallon/uriscript-nvidia-cuda/refs/heads/main/uriscript-nvidia-cuda-vn.sh
+chmod +x uriscript-nvidia-cuda-vn.sh
+sudo ./uriscript-nvidia-cuda-vn.sh
 ```
 ---
 
@@ -93,7 +92,7 @@ Enter your choice [0-2]:
 
 ---
 
-## 🧰 Troubleshooting
+## 🔧 Troubleshooting
 
 - If `nvidia-smi` fails, try rebooting or checking driver compatibility.
 - Ensure that secure boot is disabled if the driver does not load properly.
@@ -101,3 +100,14 @@ Enter your choice [0-2]:
 
 ---
 
+## 🧰 Useful Docker Commands
+
+Here are some handy commands to get started with nvidia-smi:
+
+### ⛽ nvidia-smi with live updates
+```bash
+nvidia-smi -l 2         # Realtime refresh using nvidia-smi
+watch -n 2 nvidia-smi   # Realtime using watch
+gpustat -cp             # Lightweight GPU status monitor
+nvtop                   # Top-like realtime GPU monitor
+```
