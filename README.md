@@ -44,6 +44,15 @@ The script performs the following tasks:
    sudo ./nvidia_cuda_installer.sh
    ```
 
+## 🇻🇳 Vietnamese Version
+
+A Vietnamese version of this script is available [here](https://yourdomain.com/nvidia_cuda_installer_vn.sh), or you can run:
+
+```bash
+curl -O https://yourdomain.com/nvidia_cuda_installer_vn.sh
+chmod +x nvidia_cuda_installer_vn.sh
+sudo ./nvidia_cuda_installer_vn.sh
+```
 ---
 
 ## 🧪 After Installation
@@ -81,17 +90,6 @@ Enter your choice [0-2]:
 - After installation, it is recommended to **reboot** your system to apply driver changes.
 - The script is modular and easy to modify to fit your infrastructure.
 
----
-
-## 🇻🇳 Vietnamese Version
-
-A Vietnamese version of this script is available [here](https://yourdomain.com/nvidia_cuda_installer_vn.sh), or you can run:
-
-```bash
-curl -O https://yourdomain.com/nvidia_cuda_installer_vn.sh
-chmod +x nvidia_cuda_installer_vn.sh
-sudo ./nvidia_cuda_installer_vn.sh
-```
 
 ---
 
@@ -103,6 +101,3 @@ sudo ./nvidia_cuda_installer_vn.sh
 
 ---
 
-## 📄 License
-
-This script is open-source and available under the [MIT License](LICENSE).
